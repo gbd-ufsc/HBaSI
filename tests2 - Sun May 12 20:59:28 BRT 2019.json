@@ -1,0 +1,786 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Representation of a hbase namespace",
+  "type": "object",
+  "definitions": {
+    "blob": {
+      "minLength": 2,
+      "description": "Representation of a binary large object file",
+      "type": "string"
+    },
+    "boolean": {
+      "description": "Representation of a boolean",
+      "type": "boolean"
+    },
+    "string": {
+      "description": "Representation of a string",
+      "type": "string"
+    },
+    "double": {
+      "description": "Representation of a double number",
+      "maximum": 1.7E308,
+      "type": "number",
+      "minimum": -1.7E308
+    },
+    "byte": {
+      "description": "Representation of a byte",
+      "maximum": 127,
+      "type": "number",
+      "minimum": -128
+    },
+    "char": {
+      "minLength": 1,
+      "description": "Representation of a char",
+      "type": "string"
+    },
+    "short": {
+      "description": "Representation of a short number",
+      "maximum": 32767,
+      "type": "number",
+      "minimum": -32768
+    },
+    "integer": {
+      "description": "Representation of a integer number",
+      "type": "integer"
+    },
+    "float": {
+      "description": "Representation of a float number",
+      "maximum": 3.4E38,
+      "type": "number",
+      "minimum": 3.4E-38
+    },
+    "long": {
+      "description": "Representation of a long number",
+      "maximum": 2147483647,
+      "type": "number",
+      "minimum": -2147483648
+    }
+  },
+  "properties": {
+    "testTable10": {
+      "description": "Representation of a hbase table",
+      "type": "object",
+      "properties": {
+        "f0": {
+          "description": "Representation of a hbase family",
+          "type": "object",
+          "properties": {
+            "boolean9": {
+              "$ref": "#/definitions/boolean"
+            },
+            "integer5": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "string7": {
+              "$ref": "#/definitions/string"
+            },
+            "string6": {
+              "$ref": "#/definitions/string"
+            },
+            "string1": {
+              "$ref": "#/definitions/string"
+            },
+            "string2": {
+              "$ref": "#/definitions/string"
+            },
+            "boolean3": {
+              "$ref": "#/definitions/boolean"
+            },
+            "boolean6": {
+              "$ref": "#/definitions/boolean"
+            },
+            "long6": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "short2": {
+              "$ref": "#/definitions/short"
+            },
+            "boolean4": {
+              "$ref": "#/definitions/boolean"
+            },
+            "short1": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/string"
+                },
+                {
+                  "$ref": "#/definitions/short"
+                }
+              ]
+            },
+            "long5": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "float8": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "byte8": {
+              "$ref": "#/definitions/byte"
+            },
+            "float5": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "float6": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "byte5": {
+              "$ref": "#/definitions/byte"
+            },
+            "byte6": {
+              "$ref": "#/definitions/byte"
+            },
+            "byte1": {
+              "$ref": "#/definitions/byte"
+            },
+            "boolean10": {
+              "$ref": "#/definitions/boolean"
+            },
+            "byte3": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/byte"
+                },
+                {
+                  "$ref": "#/definitions/string"
+                }
+              ]
+            },
+            "double2": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "byte2": {
+              "$ref": "#/definitions/byte"
+            },
+            "char2": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            }
+          }
+        },
+        "f1": {
+          "description": "Representation of a hbase family",
+          "type": "object",
+          "properties": {
+            "char8": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "boolean8": {
+              "$ref": "#/definitions/boolean"
+            },
+            "char6": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer10": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer4": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer2": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer3": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "long2": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "short7": {
+              "$ref": "#/definitions/short"
+            },
+            "short6": {
+              "$ref": "#/definitions/short"
+            },
+            "string5": {
+              "$ref": "#/definitions/string"
+            },
+            "string4": {
+              "$ref": "#/definitions/string"
+            },
+            "short8": {
+              "$ref": "#/definitions/short"
+            },
+            "long8": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "boolean1": {
+              "$ref": "#/definitions/boolean"
+            },
+            "boolean7": {
+              "$ref": "#/definitions/boolean"
+            },
+            "boolean5": {
+              "$ref": "#/definitions/boolean"
+            },
+            "blob4": {
+              "$ref": "#/definitions/blob"
+            },
+            "blob3": {
+              "$ref": "#/definitions/blob"
+            },
+            "float1": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "char10": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "blob7": {
+              "$ref": "#/definitions/blob"
+            },
+            "blob6": {
+              "$ref": "#/definitions/blob"
+            },
+            "blob5": {
+              "$ref": "#/definitions/blob"
+            },
+            "float7": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "byte4": {
+              "$ref": "#/definitions/byte"
+            },
+            "double7": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "byte10": {
+              "$ref": "#/definitions/byte"
+            }
+          }
+        },
+        "f2": {
+          "description": "Representation of a hbase family",
+          "type": "object",
+          "properties": {
+            "integer8": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "long10": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "char7": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer6": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "blob1": {
+              "$ref": "#/definitions/blob"
+            },
+            "float3": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer7": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "short10": {
+              "$ref": "#/definitions/short"
+            },
+            "string10": {
+              "$ref": "#/definitions/string"
+            },
+            "double8": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "double5": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "long1": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "short4": {
+              "$ref": "#/definitions/short"
+            },
+            "string3": {
+              "$ref": "#/definitions/string"
+            },
+            "double3": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "long9": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "blob10": {
+              "$ref": "#/definitions/blob"
+            },
+            "char4": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "long4": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "double9": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            }
+          }
+        },
+        "f3": {
+          "description": "Representation of a hbase family",
+          "type": "object",
+          "properties": {
+            "char9": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer9": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "integer1": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "long3": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "string8": {
+              "$ref": "#/definitions/string"
+            },
+            "short5": {
+              "$ref": "#/definitions/short"
+            },
+            "short9": {
+              "$ref": "#/definitions/short"
+            },
+            "boolean2": {
+              "$ref": "#/definitions/boolean"
+            },
+            "short3": {
+              "$ref": "#/definitions/short"
+            },
+            "long7": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "string9": {
+              "$ref": "#/definitions/string"
+            },
+            "blob2": {
+              "$ref": "#/definitions/blob"
+            },
+            "float2": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "float9": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "float10": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "blob9": {
+              "$ref": "#/definitions/blob"
+            },
+            "blob8": {
+              "$ref": "#/definitions/blob"
+            },
+            "byte9": {
+              "$ref": "#/definitions/byte"
+            },
+            "float4": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "byte7": {
+              "$ref": "#/definitions/byte"
+            },
+            "double6": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "double4": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "double1": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "double10": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/double"
+                },
+                {
+                  "$ref": "#/definitions/long"
+                }
+              ]
+            },
+            "char1": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "char5": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            },
+            "char3": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/char"
+                },
+                {
+                  "$ref": "#/definitions/float"
+                },
+                {
+                  "$ref": "#/definitions/integer"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "$id": "namespace-tests2"
+}
